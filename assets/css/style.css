@@ -281,4 +281,111 @@ nav {
 
 
 
+/** slider start **/
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 44px;
+    left: 27rem;
+}
+
+.slider a {
+    display: inline-block;
+    padding: 12px;
+    border-radius: 14px;
+    background-color: #fff;
+    margin-left: 15px;
+    transition: all 1s ease;
+}
+
+.slider a img {
+    width: 99px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.slider a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px red;
+    text-decoration: underline;
+}
+/** slider end **/
+
+
+/** social start **/
+.social {
+    position: absolute;
+    left: 1rem;
+    bottom: 38rem;
+    display: flex;
+    transform: rotate(-44deg);
+    background-color: #000;
+    border-radius: 18px;
+    box-shadow: 0 0 10px #000;
+}
+
+.social li {
+    font-size: 2rem;
+    margin: 10px;
+    color: red;
+    animation: fadeindown 1s ease-in-out backwards;
+}
+
+@keyframes fadeindown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.social li:nth-child(1) {
+    animation-delay: .2s;
+}
+.social li:nth-child(2) {
+    animation-delay: .4s;
+}
+.social li:nth-child(3) {
+    animation-delay: .6s;
+}
+.social li:nth-child(4) {
+    animation-delay: .8s;
+}
+.social li:nth-child(5) {
+    animation-delay: 1s;
+}
+.social li:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.social li i {
+    transition: all .5s ease-in-out;
+}
+.social li i:hover {
+    color: #fff;
+    cursor: pointer;
+}
+/** social end **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
