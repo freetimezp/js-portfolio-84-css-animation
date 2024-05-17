@@ -530,19 +530,101 @@ button:hover {
     box-shadow: 0 0 10px red;
     background-color: transparent;
 }
-
-
-
-
-
-
-
-
 /** air end **/
 
 
 
 
+/** reviews start **/
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    animation: fadeInUp 1s ease-in-out .5s forwards;
+}
+
+.one {
+    width: 62px;
+    height: 62px;
+    margin: 15px;
+    padding: 6px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    text-align: center;
+    transition: all .3s ease-in-out 0s;
+    overflow: hidden;
+}
+
+.one img {
+    max-width: 25%;
+    max-height: 115px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin-bottom: -10px;
+    position: absolute;
+    bottom: 5rem;
+    overflow: hidden;
+}
+
+.one span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.list li {
+    color: #ffc107;
+    margin: 0 3px;
+    font-size: 8px;
+    width: 15%;
+    margin-left: 1px;
+}
+
+.plus {
+    display: inline-block;
+    margin-top: 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/** reviews end **/
 
 
 
