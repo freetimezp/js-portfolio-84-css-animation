@@ -200,19 +200,84 @@ nav {
 /** navbar end **/
 
 
+/** main image start **/
+.img img {
+    width: 600px;
+    transform: rotate(-43deg);
+    position: absolute;
+    left: 26rem;
+    top: 12rem;
+    z-index: 1;
+    animation: fadein 1s ease-in-out .5s backwards;
+}
+/** main image end **/
 
 
+/** square start **/
+.square-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+    position: absolute;
+    left: 60rem;
+    top: 18rem;
+    transform: rotate(45deg);
+    z-index: 2;
+}
 
+.square {
+    width: 5px;
+    margin: 10px;
+    box-shadow: 0 2px 5px #000;
+    animation: lineanimation 1s ease-in-out infinite alternate;
+}
 
+@keyframes lineanimation {
+    0% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(1.2);
+    }
+}
 
+.red {
+    background-color: red;
+}
+.white {
+    background-color: #fff;
+    border: 1px solid #000;
+}
 
+.square-container .square.red:nth-child(1) {
+    height: 10rem;
+    animation-delay: 0s;
+}
+.square-container .square.red:nth-child(3) {
+    height: 15rem;
+    animation-delay: 0.2s;
+}
+.square-container .square.red:nth-child(5) {
+    height: 20rem;
+    animation-delay: 0.4s;
+}
 
-
-
-
-
-
-
+.square-container .square.white:nth-child(2) {
+    height: 22rem;
+    animation-delay: 0.1s;
+}
+.square-container .square.white:nth-child(4) {
+    height: 10rem;
+    animation-delay: 0.3s;
+}
+.square-container .square.white:nth-child(6) {
+    height: 17rem;
+    animation-delay: 0.5s;
+}
+/** square end **/
 
 
 
